@@ -3,8 +3,9 @@ chai.should();
 describe("My first wallaby test", function() {
   it("should track it length", function() {
     var sequence = new RandomColorSequence(4);
+    console.log(sequence);
     sequence.items.length.should.equal(4);
-  })
+  });
 
   var colors = ['red', 'green', 'blue', 'yellow'];
   it("should contain random items", function() {
@@ -14,7 +15,7 @@ describe("My first wallaby test", function() {
     colors.should.contain(sequence.items[1]);
     colors.should.contain(sequence.items[2]);
     colors.should.contain(sequence.items[3]);
-  })
+  });
 
   it("should return color for number", function() {
     RandomColorSequence.numberToColor(1).should.equal("red");
