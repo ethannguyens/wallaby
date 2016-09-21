@@ -24,3 +24,12 @@ describe("My first wallaby test", function() {
     RandomColorSequence.numberToColor(4).should.equal("yellow");
   })
 });
+
+describe("When the game starts", function() {
+  it("all the colors should be off", function() {
+    var sequence = new RandomColorSequence(2);repeat.html
+    var board = new Board(sequence);
+
+    console.log($('#red').css('background-color'));
+  })
+});
