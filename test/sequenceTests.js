@@ -18,6 +18,7 @@ describe("My first wallaby test", function() {
   });
 
   it("should return color for number", function() {
+    console.log(RandomColorSequence.numberToColor(1));
     RandomColorSequence.numberToColor(1).should.equal("red");
     RandomColorSequence.numberToColor(2).should.equal("green");
     RandomColorSequence.numberToColor(3).should.equal("blue");
@@ -27,9 +28,9 @@ describe("My first wallaby test", function() {
 
 describe("When the game starts", function() {
   it("all the colors should be off", function() {
-    var sequence = new RandomColorSequence(2);repeat.html
+    var sequence = new RandomColorSequence(2);
     var board = new Board(sequence);
-
+    console.log(new RandomColorSequence(4));
     console.log($('#red').css('background-color'));
   })
 });

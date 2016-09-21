@@ -1,7 +1,7 @@
 {
   "files": [
-    {"pattern" : "test/lib/jquery.min.js", "instrument": false},
-    {"pattern" : "test/lib/chai.js", "instrument": false},
+    {"pattern" : "src/lib/jquery.min.js", "instrument": false},
+    {"pattern" : "src/lib/chai.js", "instrument": false},
     "src/*.js"
   ],
   "tests": [
